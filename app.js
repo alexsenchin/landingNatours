@@ -21,7 +21,7 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
-app.get('/', (req, res) => {
+app.get('https://alexsenchin-demo-natours.herokuapp.com/', (req, res) => {
     res.render('index')
 }) 
    
