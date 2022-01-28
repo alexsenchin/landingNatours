@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Landing WebSite Template",
   "main": "index.js",
+  "engines": {
+    "node": "16.13.2"
+  },
   "scripts": {
     "compile:sass": "node-sass public/sass/main.scss public/css/main.css -w",
     "start": "node app.js"
