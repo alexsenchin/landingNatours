@@ -23,10 +23,23 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+        @include respond(tab-land) {
+            width: 90%;
+            height: 90%;
+        }
+        @include respond(phone) {
+            width: 95%;
+            height: 95%;
+        }
+        
+        
     }
     &__left {
         width: 33.33333333%;
         display: table-cell;
+        @include respond(tab-port) {
+            display: none;
+        }
     }
     &__right {
         width: 66.66666667%;
@@ -50,6 +63,10 @@
         hyphens: auto;
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
+        @include respond(tab-land) {
+            column-count: 1;
+            margin-bottom: 2rem;
+        }
     }
     // Popoup open states
     &:target {
